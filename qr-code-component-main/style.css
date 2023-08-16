@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: "Outfit", sans-serif;
+
+    --white-bg: hsl(0, 0%, 100%);
+    --lightgrey-bg: hsl(212, 45%, 89%);
+    --dark-blue-text: hsl(218, 44%, 22%);
+    --grayish-blue-text: hsl(220, 15%, 55%);
+}
+
+body {
+    font-size: 15px;
+    font-family: var(--main-font);
+    text-align: center;
+    background-color: var(--lightgrey-bg);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 300px;
+    margin: 5% auto;
+    transition: .4s;
+}
+
+.qr-container {
+    padding: 1em;
+    background-color: var(--white-bg);
+    border-radius: 15px;
+}
+
+h2 {
+    padding: .8em .2em;
+}
+
+p {
+    color: var(--grayish-blue-text);
+    padding: 0 .5em 1.5em .5em;
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 400px;
+        transition: .4s;
+    }
+
+    .qr-container {
+        padding: 1.2em;
+    }
+
+    p {
+        padding: 0 1em 1.2em 1em;
+    }
+}
