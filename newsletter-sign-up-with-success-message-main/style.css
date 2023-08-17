@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* FONT */
+    --main-font: 'Roboto', sans-serif;
+
+    /* PRIMARY COLORS */
+    --tomato: hsl(4, 100%, 67%);
+
+    /* NEUTRAL COLORS */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--charcoal-grey);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container {
+    max-width: 400px;
+    padding: 1em .8em;
+    border-radius: 20px;
+    background-color: var(--white);
+    margin: 3% auto 2% auto;
+    transition: .6s;
+}
+
+.top-container {
+    text-align: center;
+    padding-bottom: .8em;
+}
+
+.bottom-container {
+    width: 88%;
+    max-width: 375px;
+    color: var(--dark-slate-grey);
+    border: 2px solid var;
+    margin: 0 auto;
+}
+
+.bottom-container h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: .5em 0;
+    padding-bottom: .8em;
+}
+
+.updates-container {
+    padding: .8em 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding: .5em 0;
+}
+
+.box img {
+    padding-right: .8em;
+}
+
+.input-group {
+    padding: .5em 0;
+}
+
+.input-group label {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    padding: .9em;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    margin: .5rem 0;
+}
+
+.input-group input::placeholder {
+    font-family: var(--main-font);
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.submit-btn {
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    padding: 1em;
+    color: var(--white);
+    border-radius: 10px;
+    border: transparent;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--dark-slate-grey);
+}
+
+.bigger-screen--container {
+    display: none;
+}
+
+.attribution {
+    color: var(--white);
+    padding-top: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.attribution a {
+    color: var(--grey);
+}
+
+@media (min-width: 900px) {
+    .none {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        width: 90%;
+        padding: 1em;
+        transition: .6s;
+    }
+
+    .bottom-container h1 {
+        font-size: 3rem;
+        padding-bottom: .4em;
+    }
+
+    .bigger-screen--container {
+        display: block;
+    }
+}
