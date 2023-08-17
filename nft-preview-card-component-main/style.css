@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* FONT */
+    --main-font: "Outfit", sans-serif;
+
+    /* PRIMARY COLORS */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* NEUTRAL COLORS */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: .8em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    width: 88%;
+    margin: 5% auto 2% auto;
+    max-width: 400px;
+    padding: 1.5em;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+}
+
+.first-p {
+    color: var(--soft-blue);
+    line-height: 1.6;
+    padding-bottom: 1em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-flex--container {
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.first-flex--container img {
+    width: 18px;
+    height: 18px;
+}
+
+.inner-first-flex--container,
+.inner-second-flex--container {
+    align-items: center;
+}
+
+.inner-first-flex--container img,
+.inner-second-flex--container img {
+    margin-right: .5rem;
+}
+
+.inner-first-flex--container p {
+    color: var(--cyan);
+}
+
+.inner-second-flex--container p {
+    color: var(--soft-blue);
+}
+
+.line {
+    border: 1px solid var(--line-color);
+}
+
+.second-flex--container {
+    width: 78%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.second-flex--container img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.second-flex--container p {
+    color: var(--soft-blue);
+}
+
+.name {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.attribution {
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 500px) {
+    .container {
+        max-width: 420px;
+    }
+}
