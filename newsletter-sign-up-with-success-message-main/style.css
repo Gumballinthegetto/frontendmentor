@@ -118,6 +118,11 @@ img {
     background-color: var(--dark-slate-grey);
 }
 
+.submit-btn:hover {
+    background-color: var(--tomato);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .bigger-screen--container {
     display: none;
 }
@@ -131,6 +136,65 @@ img {
 .attribution a {
     color: var(--grey);
 }
+
+.hide {
+    display: block;
+}
+
+.thank-you--container {
+    display: none;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    border-radius: 0px;
+    height: 100vh;
+    transition: .6s;
+}
+
+.inner-thank-you--container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.inner-thank-you--container img {
+    padding-bottom: .5em;
+}
+
+.inner-thank-you--container h1 {
+    font-size: 3rem;
+    color: var(--dark-slate-grey);
+    padding: .5em 0;
+}
+
+
+.inner-thank-you--container p {
+    color: var(--dark-slate-grey);
+    line-height: 1.5;
+}
+
+.inner-thank-you--container p span {
+    font-weight: 700;
+}
+
+.inner-thank-you--container button {
+    cursor: pointer;
+    padding: 1.2em 0;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border-radius: 10px;
+    border: none;
+    font-size: .9rem;
+    font-family: var(--main-font);
+    margin-top: 35%;
+}
+
+.inner-thank-you--container button:hover {
+    background-color: var(--tomato);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 
 @media (min-width: 900px) {
     .none {
@@ -154,5 +218,39 @@ img {
 
     .bigger-screen--container {
         display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .thank-you--container {
+        display: none;
+        border-radius: 20px;
+        max-width: 500px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        margin: 10% auto;
+        transition: .6s;
+    }
+
+    .inner-thank-you--container {
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    .inner-thank-you--container h1 {
+        font-size: 3.4rem;
+    }
+
+    .inner-thank-you--container button {
+        margin: 2.2rem 0 1rem 0;
+    }
+
+    .inner-thank-you--container button:hover {
+        background-color: var(--tomato);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
