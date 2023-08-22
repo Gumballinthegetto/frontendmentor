@@ -1,0 +1,272 @@
+:root {
+    /* FONT */
+    --main-font: 'Inter', sans-serif;
+
+    /* PRIMARY COLORS */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    /* NEUTRAL COLORS */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family: var(--main-font);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-section {
+    padding: 2em 0;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.nav.visible {
+    display: block;
+}
+
+.nav img {
+    position: absolute;
+    right: 9%;
+    top: 5%;
+}
+
+.nav-list {
+    position: absolute;
+    top: 20%;
+    padding-left: 1.5em;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    color: var(--very-dark-blue);
+    padding: .8em 0;
+}
+
+.nav-link {
+    transition: .3s;
+}
+
+.hero-section--title {
+    max-width: 90%;
+    font-size: 2.4rem;
+    padding: .4em 0;
+    line-height: 1.1;
+}
+
+.hero-section--second-img {
+    display: none;
+}
+
+.hero-section--description {
+    line-height: 1.5;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 1.2em;
+}
+
+.hero-section--btn {
+    background-color: var(--soft-red);
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--off-white);
+    padding: 1em 2em;
+}
+
+.left-container {
+    padding-bottom: 3rem;
+}
+
+.right-container {
+    padding: 1.2em;
+    padding-bottom: .1em;
+    background-color: var(--very-dark-blue);
+}
+
+.news-section--title {
+    font-size: 2rem;
+    color: var(--soft-orange);
+}
+
+.news-section--mini-container {
+    padding: 1.4em 0;
+}
+
+.news-section--mini-title {
+    color: var(--off-white);
+    padding-bottom: .6em;
+}
+
+.news-section--mini-description {
+    color: var(--grayish-blue);
+    padding-bottom: .8em;
+}
+
+.divider {
+    border: 1px solid var(--dark-grayish-blue);
+}
+
+.article-section {
+    padding: 4rem 0;
+}
+
+.article-section--mini-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.img-container {
+    width: 27%;
+}
+
+.description-container {
+    width: 66%;
+}
+
+.article-section--mini-number {
+    color: var(--grayish-blue);
+    font-size: 2.2rem;
+}
+
+.article-section--mini-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: .6em 0;
+}
+
+.article-section--mini-description {
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.attribution {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 750px) {
+    .open-btn,
+    .close-btn {
+        display: none;
+    }
+
+    .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 75px;
+        border: none;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 1.1rem;
+        padding: .5em .8em;
+    }
+
+    .nav-link {
+        color: var(--dark-grayish-blue);
+    }
+
+    .hero-section--img {
+        display: none;
+    }
+
+    .hero-section--second-img {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .inner-left--container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inner-left--left-container h1 {
+        width: 75%;
+        font-size: 3.5rem;
+    }
+
+    .inner-left--right-container {
+        width: 95%;
+        padding: 1.8em 0;
+    }
+
+    .inner-left--right-container p {
+        padding-bottom: 2em;
+    }
+}
