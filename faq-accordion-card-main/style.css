@@ -75,6 +75,7 @@ button {
     border-radius: 15px;
     padding: 7em 1.5rem 3rem 1.5rem;
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .bottom-container h1 {
@@ -146,6 +147,7 @@ button {
         border-radius: 15px;
         padding: 2em 6em 2em .4em;
         margin: 10% auto 2% auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     }
 
     .mobile-img--container {
@@ -176,6 +178,7 @@ button {
     .bottom-container {
         background-color: transparent;
         z-index: 0;
+        box-shadow: none;
     }
 
     .bottom-container h1 {
