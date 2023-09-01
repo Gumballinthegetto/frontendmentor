@@ -45,7 +45,6 @@ button {
 }
 
 .bg {
-    height: 100vh;
     border-top: 1px solid var(--soft-violet);
     background: linear-gradient(to bottom, #af67e9, #9f67e9, #8d66e9, #7a66e8, #6565e7);
 }
