@@ -7,10 +7,12 @@ let featuresList = document.querySelector('.features-list');
 let companyList = document.querySelector('.company-list');
 
 openBtn.addEventListener('click', () => {
+    document.documentElement.style.backgroundColor = '#00000050';
     nav.classList.toggle('toggle');
 });
 
 closeBtn.addEventListener('click', () => {
+    document.documentElement.style.backgroundColor = '#fff';
     nav.classList.remove('toggle');
 });
 

@@ -82,6 +82,11 @@ img {
     color: var(--almost-black);
 }
 
+.nav.toggle .features-list,
+.nav.toggle .company-list {
+    display: none;
+}
+
 .nav.toggle .features-list.features-toggle,
 .nav.toggle .company-list.company-toggle {
     padding: 1em 0;
